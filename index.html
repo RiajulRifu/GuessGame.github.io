@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Guess game</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="headline">Welcome to guessing game</h1>
+        <p class="text">click play to continue</p>
+        <div class="btn_con">
+            <button class="btn">Play</button>
+        </div>
+    </div>
+    <!-- user_popup -->
+    <div class="overlay hide_con"></div>
+    <div class="game_interface hide_con">
+        <div class="close">
+            <button class="x">X</button>
+        </div>
+        <h1 class="game_headline">Guessing Game</h1>
+        <p class="game_text">Start guessing the number between 1 to 20</p>
+        <div class="number_con">
+            <p class="number">?</p>
+        </div>
+        <p class="msg">"Start here.."</p>
+        <div class="userinput">
+            <label for="text"></label>
+            <input type="text" name="text" id="user_guess" value="" />
+        </div>
+        <div class="btn_con">
+            <button class="click">Click</button>
+        </div>
+        <div class="leaderboard">
+            <h6 id="score">Score: <span class="score">20</span></h6>
+            <h6 id="highestscore">
+                highestscore: <span class="highestscore">0</span>
+            </h6>
+        </div>
+        <div class="play_again_con">
+            <button class="play_again">Again?</button>
+        </div>
+    </div>
+
+    <script src="./css/script.js"></script>
+</body>
+
+</html>
